@@ -3,12 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
     <link href="../path/to/src/pagedone.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <title>Tea House</title>
 </head>
 <body class="font-manrope">
-    
+    <header>
+        <nav class="w-[90%] mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-xl md:text-2xl lg:text-3xl font-bold">Tea House</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <ul class="flex justify-center items-center gap-9 pr-6 lg:pr-9 lg:gap-14">
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Home</li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#">About us</a></li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Order now</li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Contact  us</li>
+                    </ul>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span class="badge badge-sm indicator-item">8</span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="0"
+                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                      <div class="card-body">
+                        <span class="text-lg font-bold">8 Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                          <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="Hamburger cursor-pointer" id="openMenu">
+                    <i class="ri-menu-line pl-3 text-3xl md:hidden"></i>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <aside class="hidden" id="mobileMenu">
+        <div class="aside-container h-full w-[65%] absolute right-0 top-0 z-10 rounded-l-3xl py-10 px-12 flex flex-col justify-between shadow-xl shadow-slate-700 overflow-hidden bg-white">
+            <div class="absolute">
+                <div class="shape1 bg-orange-400 h-56 w-56 rounded-full absolute top-36 animate-bounce blur-xl mix-blend-multiply animate-delay-200"></div>
+                <div class="shape2 bg-violet-400 h-56 w-56 rounded-full absolute top-[340px] animate-bounce blur-xl left-9 mix-blend-multiply animate-delay-500"></div>
+                <div class="shape3 bg-yellow-400 h-56 w-56 rounded-full absolute top-[500px] blur-xl mix-blend-multiply animate-bounce animate-delay-700 left-1"></div>
+            </div>
+            <div class="close z-20 cursor-pointer" id="closeMenu"><i class="ri-close-large-fill text-black text-3xl hover:text-orange-400 duration-200 animate-pulse"></i></div>
+
+            <ul class="menu bg-transparent rounded-box w-full">
+                <li class="menu-title text-lg text-orange-500">Explore Tea House</li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Home</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>About Us</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Menu</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Locations</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Order History</a></li>
+              </ul>
+
+              <div class="flex flex-col justify-center items-center">
+                <button
+    class="relative group inline-flex items-center px-8 py-2.5 overflow-hidden text-lg font-medium text-orange-600 border-2 border-orange-600 rounded-lg hover:text-white group hover:bg-gray-50 mb-3">
+    <span
+      class="absolute left-0 block w-full h-0 transition-all bg-orange-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+    <span
+      class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+    </span>
+    <span class="relative text-base font-semibold transition-all duration-300 group-hover:-translate-x-3">Sign Up</span>
+  </button>
+  <p class="text-center">Have an Account? <br> <a href="javascript:;" class="text-base font-semibold m-6 group relative w-max">
+    <span>Log in</span>
+    <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-orange-600 group-hover:w-3/6"></span>
+    <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-orang6-600 group-hover:w-3/6"></span>
+  </a></p>
+  
+            </div>
+        </div>
+    </aside>
 
     <script src="main.js"></script>
     <script src="../path/to/src/pagedone.js"></script>
