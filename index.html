@@ -12,7 +12,7 @@
     <title>Tea House</title>
 </head>
 <body class="font-manrope">
-    <header>
+    <header id="navMenu">
         <nav class="w-[90%] mx-auto">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -307,7 +307,7 @@
          </section>
          <!-- news section -->
           <section>
-            <div class="news-container w-[80%] mx-auto">
+            <div class="news-container w-[80%] mx-auto mb-8">
               <p class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4">News & Events</p>
               <p class="text-center lg:text-lg text-gray-400 mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some <br> form, by injected humour, or randomised words which don't look even slightly believable. </p>
 
@@ -353,7 +353,19 @@
               </div>
             </div>
           </section>
+
+          <section>
+            <div class="toTop fixed z-40 bottom-9 right-7 bg-slate-300 w-14 h-14 rounded-full flex justify-center items-center"><a href="#navMenu"><i class="ri-arrow-up-s-line text-3xl text-white"></i></a></div>
+          </section>
     </main>
+
+    <footer class="bg-gradient-to-r from-red-100 to-red-200 py-14">
+      <div class="footer-container w-[80%] mx-auto">
+        <div class="footer-logo gap-4 flex flex-col md:flex-row justify-between">
+          <img src="./images/cup.png" alt="" class="w-16">
+          <div class="flex gap-4 items-center"><p>Ready to get started?</p><Button class="btn bg-gradient-to-r from-orange-400 to-red-400 border-none text-white">Get Started</Button></div>
+        </div> 
+    </footer>
 
     <script src="main.js"></script>
     <script src="../path/to/src/pagedone.js"></script>
