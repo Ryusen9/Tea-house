@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../path/to/src/pagedone.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="icon" href="/assets/cup-Ziim0kBa.png">
+    <title>Tea House</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DYMjmuiH.css">
+</head>
+<body class="font-manrope">
+    <header id="navMenu">
+        <nav class="w-[90%] mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-xl md:text-2xl lg:text-3xl font-bold">Tea House</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <ul class="flex justify-center items-center gap-9 pr-6 lg:pr-9 lg:gap-14">
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Home</li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#">About us</a></li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Order now</li>
+                        <li class="font-bold hover:text-orange-400 cursor-pointer duration-200"><a href="#"></a>Contact  us</li>
+                    </ul>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span class="badge badge-sm indicator-item">8</span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="0"
+                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                      <div class="card-body">
+                        <span class="text-lg font-bold">8 Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                          <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="Hamburger cursor-pointer" id="openMenu">
+                    <i class="ri-menu-line pl-3 text-3xl md:hidden"></i>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <aside class="hidden" id="mobileMenu">
+        <div class="aside-container h-full w-[65%] absolute right-0 top-0 z-10 rounded-l-3xl py-10 px-12 flex flex-col justify-between shadow-xl shadow-slate-700 overflow-hidden bg-white">
+            <div class="absolute">
+                <div class="shape1 bg-orange-400 h-56 w-56 rounded-full absolute top-36 animate-bounce blur-xl mix-blend-multiply animate-delay-200"></div>
+                <div class="shape2 bg-violet-400 h-56 w-56 rounded-full absolute top-[340px] animate-bounce blur-xl left-9 mix-blend-multiply animate-delay-500"></div>
+                <div class="shape3 bg-yellow-400 h-56 w-56 rounded-full absolute top-[500px] blur-xl mix-blend-multiply animate-bounce animate-delay-700 left-1"></div>
+            </div>
+            <div class="close z-20 cursor-pointer" id="closeMenu"><i class="ri-close-large-fill text-black text-3xl hover:text-orange-400 duration-200 animate-pulse"></i></div>
+
+            <ul class="menu bg-transparent rounded-box w-full">
+                <li class="menu-title text-lg text-orange-500">Explore Tea House</li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Home</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>About Us</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Menu</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Locations</a></li>
+                <li class="font-semibold hover:text-orange-600 duration-200"><a>Order History</a></li>
+              </ul>
+
+              <div class="flex flex-col justify-center items-center">
+                <button
+    class="relative group inline-flex items-center px-8 py-2.5 overflow-hidden text-lg font-medium text-orange-600 border-2 border-orange-600 rounded-lg hover:text-white group hover:bg-gray-50 mb-3">
+    <span
+      class="absolute left-0 block w-full h-0 transition-all bg-orange-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+    <span
+      class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+    </span>
+    <span class="relative text-base font-semibold transition-all duration-300 group-hover:-translate-x-3">Sign Up</span>
+  </button>
+  <p class="text-center">Have an Account? <br> <a href="javascript:;" class="text-base font-semibold m-6 group relative w-max">
+    <span>Log in</span>
+    <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-orange-600 group-hover:w-3/6"></span>
+    <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-orang6-600 group-hover:w-3/6"></span>
+  </a></p>
+  
+            </div>
+        </div>
+    </aside>
+
+    <main>
+      <!-- hero seection -->
+        <section>
+            <div class="hero-coantainer grid grid-cols-1 gap-4 md:grid-cols-2 px-12 md:px-16 lg:px-20 py-4 md:py-8 lg:py-12 mb-8">
+                <div class="text-container flex flex-col justify-center">
+                    <p class="font-extrabold text-5xl md:text-6xl lg:text-7xl mb-5">
+                        It's good <br> 
+                        tea time at The <br>
+                        Tea House
+                    </p>
+
+                    <p class="text-gray-400 mb-5">
+                        Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.
+                    </p>
+
+                    <div class="button z-0">
+                        <button class="relative inline-block group">
+                            <span
+                              class="relative z-10 px-3.5 py-2 overflow-hidden font-medium leading-tight flex items-centrer justify-center text-orange-600 transition-colors duration-300 ease-out border-2 border-orange-600 rounded-lg group-hover:text-white">
+                              <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                              <span
+                                class="absolute left-0 w-40 h-40 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gradient-to-l from-orange-500 to-orange-600 group-hover:-rotate-180 ease"></span>
+                              <span class="relative text-base font-semibold">Explore More <i class="ri-arrow-right-line"></i></span>
+                            </span>
+                            <span
+                              class="absolute bottom-0 right-0 w-full h-9 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-orange-600 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                              data-rounded="rounded-lg"></span>
+                          </button>
+                    </div>
+                </div>
+                <!-- image container -->
+                 <div class="image-container relative flex">
+                    <img src="/assets/banner-DhaAufaz.png" alt="" class="w-full mx-auto md:w-full animate-fade-up animate-delay-700">
+                    <!-- card -->
+                     <div class="card-container bg-gray-100 py-3 w-[180px] md:w-[250px] rounded-xl flex justify-center items-center gap-2 absolute bottom-1 left-16">
+                        <div class="start">
+                            <i class="ri-sparkling-2-fill text-4xl text-emerald-300"></i>
+                        </div>
+
+                        <div class="text">
+                            <p class="text-2xl md:text-3xl font-semibold">5.00</p>
+                            <p class="text-sm">Trust Pilot Rating</p>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        <!-- featured products -->
+        <section class="fetured-products px-4 mb-8">
+          <div class="text-container text-center mb-6">
+            <p class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our Featured Products</p>
+            <p class="w-2/3 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          </div>
+
+          <div class="card-container w-[80%] mx-auto grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div class="card py-4 bg-gradient-to-t from-transparent to-lime-100">
+              <img src="/assets/tea-1-AEAd9KMG.png" alt="" class="w-[200px] mx-auto mb-4">
+              <div class="text text-center">
+                <p class="text-2xl  font-semibold">Lemon Tea</p>
+                <p class="text-gray-600">Creamer could be replaced <br> 
+                  by fresh milk</p>
+              </div>
+            </div>
+
+            <div class="card py-4 bg-gradient-to-t from-transparent to-pink-100">
+              <img src="/assets/tea-2-Df2wDXjE.png" alt="" class="w-[200px] mx-auto mb-4">
+              <div class="text text-center">
+                <p class="text-2xl  font-semibold">Black Tea</p>
+                <p class="text-gray-600">Creamer could be replaced <br> 
+                  by fresh milk</p>
+              </div>
+            </div>
+
+            <div class="card py-4 bg-gradient-to-t from-transparent to-amber-100">
+              <img src="/assets/tea-3-D507SdNr.png" alt="" class="w-[200px] mx-auto mb-4">
+              <div class="text text-center">
+                <p class="text-2xl  font-semibold">Milk Tea</p>
+                <p class="text-gray-600">Creamer could be replaced <br> 
+                  by fresh milk</p>
+              </div>
+            </div>
+
+            <div class="card py-4 bg-gradient-to-t from-transparent to-red-100">
+              <img src="/assets/tea-4-BTNSP7Jp.png" alt="" class="w-[200px] mx-auto mb-4">
+              <div class="text text-center">
+                <p class="text-2xl  font-semibold">Black Tea</p>
+                <p class="text-gray-600">Creamer could be replaced <br> 
+                  by fresh milk</p>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <!-- grid card section -->
+         <section>
+          <div class="container grid gap-3 grid-cols-1 md:grid-cols-2 px-4 py-4 mx-auto">
+            <!-- left -->
+            <div class="image-container gap-4 grid grid-rows-6 md:grid-cols-2 md:grid-rows-3 w-[80%] mx-auto">
+              <div class="gradient1 h-52 rounded-xl bg-gradient-to-r from-pink-50 to-pink-100"></div>
+              <div class="image bg-gradient-to-t from-orange-50 to-orange-100 row-span-2 flex justify-center items-center rounded-xl">
+                <img src="/assets/fresh-1-xMHL4kkY.png" alt="" class="w-60">
+              </div>
+              <div class="gradient2 gradient1 h-52 rounded-xl bg-gradient-to-r from-stone-50 to-stone-100"></div>
+              <div class="image2 row-span-2 bg-gradient-to-t from-stone-50 to-stone-100 flex justify-center items-center rounded-xl md:row-start-2">
+                <img src="/assets/fresh-2-CYqHHqMC.png" alt="" class="w-48">
+              </div>
+            </div>
+
+            <!-- right -->
+             <div class="text-container px-5 py-11 flex flex-col justify-center">
+              <p class="text-4xl md:text-5xl lg:text-6xl mb-8 font-extrabold">Great Tea, Freshly <br> Presented</p>
+              <p class="text-gray-500 mb-6">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+              <p class="text-2xl font-semibold mb-5">Unique Taste</p>
+              <p class="text-gray-500 mb-6">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+              <p class="text-2xl font-semibold mb-5">Premium Quality</p>
+              <p class="text-gray-500 mb-5">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+             </div>
+          </div>
+         </section>
+        <!-- customer review section -->
+         <section>
+          <div class="container rounded-2xl grid gap-4 bg-gradient-to-r from-orange-400 to-red-700 grid-cols-1 md:grid-cols-2 w-[80%] mx-auto md:w-[90%] mb-8">
+            <!-- text contents -->
+            <div class="text-section py-7 px-5 flex flex-col justify-center">
+              <p class="text-3xl font-semibold text-white mb-4">
+                Meet Our Super <br> Clients
+              </p>
+              <p class="text-white lg:text-lg mb-6">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+              </p>
+
+              <div class="button-here">
+                <button class="btn btn-sm md:btn-md lg:btn-lg bg-white font-bold text-orange-400">Show All</button>
+              </div>
+            </div>
+            <!-- review content -->
+             <div class="review-section relative py-5 h-[60vh] md:h-[65vh] overflow-hidden">
+              <div class="card1 w-3/4 px-4 py-7 rounded-xl relative left-20 md:top-12 bg-white opacity-40">
+                <div class="avatar absolute -top-4 -left-6">
+                  <div class="ring-white ring-offset-base-100 w- rounded-full ring ring-offset-2">
+                    <img src="/assets/client-q88NZFXZ.png" />
+                  </div>
+                </div>
+                <p class="mt-8 mb-4 text-gray-500">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <p class="font-bold text-xl">Ilham Yuda</p>
+                <p>Businessman</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgBtZRPSsNAFId/b8aVKBREt+1aFDxCCiqKm95AegN7gvQKPUELdZ+VdqGF3sCi6NbsVdqNdNPMc1JJqXWSPpv4QTZv3h+GeV8IQrp3Ew8aPoMrDIRmahr1062hpJYkSe37z5omCpbjkYmq9ZPtwap6BQEbinxnsdY+BIiGMOPIFSeGh6KGWEJXkFPiaw2JDFruE+5AgOjhY7r9id0sc2VLSrb5mJmal8ebLfwH130ut4NR6S81s5vkcWCRt96TpzHbuIr9wqkxjb2LgyHldSDh/faxRqR/9TEwVZXXgXm+cufHN1N5HUhI62OfwItXOHQfyhxYIEyLq7wOJETMaevc+d6ughz46D3H72L7IF7xMYiaO2f7P/us44CL0c1L+TV4mPcRG5/mgKRWNCTLgd3zw8GqetEPMssBSOolSVkOoKghyHAARQ3JcgACxNslcqAolh2Q8AWNI6oLQUXsggAAAABJRU5ErkJggg==" alt="" class="absolute right-9 bottom-3 w-8">
+              </div>
+
+              <div class="card2 w-3/4 px-4 py-7 rounded-xl relative top-9 left-20 md:top-20 bg-white opacity-40">
+                <div class="avatar absolute -top-4 -left-6">
+                  <div class="ring-white ring-offset-base-100 w- rounded-full ring ring-offset-2">
+                    <img src="/assets/client-q88NZFXZ.png" />
+                  </div>
+                </div>
+                <p class="mt-8 mb-4 text-gray-500">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <p class="font-bold text-xl">Ilham Yuda</p>
+                <p>Businessman</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgBtZRPSsNAFId/b8aVKBREt+1aFDxCCiqKm95AegN7gvQKPUELdZ+VdqGF3sCi6NbsVdqNdNPMc1JJqXWSPpv4QTZv3h+GeV8IQrp3Ew8aPoMrDIRmahr1062hpJYkSe37z5omCpbjkYmq9ZPtwap6BQEbinxnsdY+BIiGMOPIFSeGh6KGWEJXkFPiaw2JDFruE+5AgOjhY7r9id0sc2VLSrb5mJmal8ebLfwH130ut4NR6S81s5vkcWCRt96TpzHbuIr9wqkxjb2LgyHldSDh/faxRqR/9TEwVZXXgXm+cufHN1N5HUhI62OfwItXOHQfyhxYIEyLq7wOJETMaevc+d6ughz46D3H72L7IF7xMYiaO2f7P/us44CL0c1L+TV4mPcRG5/mgKRWNCTLgd3zw8GqetEPMssBSOolSVkOoKghyHAARQ3JcgACxNslcqAolh2Q8AWNI6oLQUXsggAAAABJRU5ErkJggg==" alt="" class="absolute right-9 bottom-3 w-8">
+              </div>
+
+              <div class="card3 w-3/4 px-4 py-7 rounded-xl absolute top-36 md:top-44 left-10 bg-white">
+                <div class="avatar absolute -top-4 -left-6">
+                  <div class="ring-white ring-offset-base-100 w- rounded-full ring ring-offset-2">
+                    <img src="/assets/client-q88NZFXZ.png" />
+                  </div>
+                </div>
+                <p class="mt-8 mb-4 text-gray-500">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <p class="font-bold text-xl">Ilham Yuda</p>
+                <p>Businessman</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgBtZRPSsNAFId/b8aVKBREt+1aFDxCCiqKm95AegN7gvQKPUELdZ+VdqGF3sCi6NbsVdqNdNPMc1JJqXWSPpv4QTZv3h+GeV8IQrp3Ew8aPoMrDIRmahr1062hpJYkSe37z5omCpbjkYmq9ZPtwap6BQEbinxnsdY+BIiGMOPIFSeGh6KGWEJXkFPiaw2JDFruE+5AgOjhY7r9id0sc2VLSrb5mJmal8ebLfwH130ut4NR6S81s5vkcWCRt96TpzHbuIr9wqkxjb2LgyHldSDh/faxRqR/9TEwVZXXgXm+cufHN1N5HUhI62OfwItXOHQfyhxYIEyLq7wOJETMaevc+d6ughz46D3H72L7IF7xMYiaO2f7P/us44CL0c1L+TV4mPcRG5/mgKRWNCTLgd3zw8GqetEPMssBSOolSVkOoKghyHAARQ3JcgACxNslcqAolh2Q8AWNI6oLQUXsggAAAABJRU5ErkJggg==" alt="" class="absolute right-9 bottom-3 w-8">
+              </div>
+              
+             </div>
+          </div>
+         </section>
+         <!-- news section -->
+          <section>
+            <div class="news-container w-[80%] mx-auto mb-8">
+              <p class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4">News & Events</p>
+              <p class="text-center lg:text-lg text-gray-400 mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some <br> form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+              <div class="card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card bg-white py-4 mx-auto shadow-xl">
+                  <figure>
+                    <img
+                      src="/assets/news-1-C4feUiyp.png" />
+                  </figure>
+                  <div class="card-body">
+                    <p class="text-gray-400">Feb 05, 2027</p>
+                    <p class="text-2xl font-semibold">Collecting 8 points for discount</p>
+                    <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    <a href="#" class="font-bold hover:text-orange-400 duration-200">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="card bg-white py-4 mx-auto shadow-xl">
+                  <figure>
+                    <img
+                      src="/assets/news-2-DR3e5a6h.png" />
+                  </figure>
+                  <div class="card-body">
+                    <p class="text-gray-400">Feb 05, 2027</p>
+                    <p class="text-2xl font-semibold">Collecting 8 points for discount</p>
+                    <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    <a href="#" class="font-bold hover:text-orange-400 duration-200">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="card bg-white py-4 mx-auto shadow-xl">
+                  <figure>
+                    <img
+                      src="/assets/news-3-B8d7dLzE.png" />
+                  </figure>
+                  <div class="card-body">
+                    <p class="text-gray-400">Feb 05, 2027</p>
+                    <p class="text-2xl font-semibold">Collecting 8 points for discount</p>
+                    <p>There are many variations of passages of Lorem Ipsum available.</p>
+                    <a href="#" class="font-bold hover:text-orange-400 duration-200">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="toTop fixed z-40 bottom-9 right-7 bg-slate-300 w-14 h-14 rounded-full flex justify-center items-center"><a href="#navMenu"><i class="ri-arrow-up-s-line text-3xl text-white"></i></a></div>
+          </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-red-100 to-red-200 py-14">
+      <div class="footer-container w-[80%] mx-auto">
+        <div class="footer-logo gap-4 flex flex-col md:flex-row justify-between">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAABBCAYAAACJtRdQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQVSURBVHgB7ZrbUdtAFIaPjXmCmShvMMAgKsBUELuCuANIBUAF2BVgKgh0QCrAVIBSAeI2w1uUGXhgwJD/iBVxHF3W3osk29+MRrIs2fp19nL+3a2QZdbW1lpvb2/b2OqVSiXAKR/Hp3d3dydkkQpZYmlpya3Vat9x2Ij7HuL9fr/fvL+/98kCVoSz6Lm5uTNE2E27jsU/Pj5uBYAMUyULzM/Pt7NEM3zN4uLiHlnAeMRd13VeXl5+jXBL8PDwsGE66sYjDtF1Gg1nYWHBJcNYKeqjgiLvkGEKKdwGM+HTxkz4tDETPm3UqGBwvo6d8Vw9F+EsrlqtejgMcOwhYbmCifECAY2JA0TWx5bXxbaO3/+N7QLm58fgbxvP1YUd/WpYHKfFfC4x4xMl6Qi+v8ufrfnxURhXnCTt29vbTm7CDYvLomlUeM7iEsFzHCsLHxL3CVudxWFzZAYf8oDru5TwMorL4h/hLBBDP1wUWyyw7OJSCD768eXl5Ra6Gx4FDeseBIfnIZomkPNQ1erq6i52XZoemhWRYFzSlICSzEnMXpWHfmlKiETzce319fXLhNZj9gEBT1Nhf449T1P1oi9rZW+xI8ODAF7ho4fjgD2BD9Lu41adDUNuWZQMg+IQqMvI8GSJS4OFsz1sUM6YEJcGC++QJeGmxEWZJTy3L2t5w1ZtZWXlGA+xTRowLY6yDY+H892s+faP5hxJDCcwuySB5RGUsdwc7u3e3NzsJ34/+AHiG/ijHdy0yTm6BXEfhocMWNU08UY68CK5OUw5f44L1NiDjY7g6empjpKwniYuT8ODAOxA938+REo4VwH6a1UdsXDHxdw3QXR4TVHdHKrrZtz5VOHDC3YmyaomCo8W7NB7o1Na0K3+jDufOIUks0qpDPT7/dO487ERF3XapZLDNjRp3VxSxFtUfnqR944jVji33FReOOHax2xJM+2i2KIu1pgWmXCQYdiH49hHlD2ZH4gVLlJUyhuTVjVWHa9GRGt4gT92yTC2fXhEYlhFy35GGshLXBqp5ZnXlmN3KBN5E+IiP2DiBWVWZJHBNXiggl+AiciharmR2cHHDWzrkR8Ql/Bo6enz83NH13p2ay2YrkEGvPid6+vrE1JEu3AMY7GY0IdTfPR00EQ/3SMFtC3+EfNvbYqJnu6uES/yELstUkDLOjeIPqD3SUcrGR8PeoheZ2yUhQ9E2iqqOYaycDzAHpUQpTqep31FcfdJAaWIi+7IOixatVUv5SJeJFBHpIiScLx5KQuomU60LFMF5Q4W+fylDRdH7x5ci2hGOYHBw3wjTS5O/J7PAyFcmnhcgFcf47QnO8Agi5aUCq17G7uDEW6JRlB6qK+hMN5GmeZVRVsuKVxce3C6uYg+3ChsM9mNUYH5A7krr+hJwQswAAAADmVYSWZNTQAqAAAACAAAAAAAAADSU5MAAAAASUVORK5CYII=" alt="" class="w-16">
+          <div class="flex gap-4 items-center"><p>Ready to get started?</p><Button class="btn bg-gradient-to-r from-orange-400 to-red-400 border-none text-white">Get Started</Button></div>
+        </div> 
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="../path/to/src/pagedone.js"></script>
+</body>
+</html>
